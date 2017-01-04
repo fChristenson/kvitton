@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="59dp"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/margin_md">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/font_lg"
+        android:layout_weight="1"
+        android:letterSpacing="0.05"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/colorPrimary"
+        android:text="foo"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:textSize="@dimen/font_sm"
+        android:textAlignment="viewEnd"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimary"
+        android:text="2016-12-24"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/font_md"
+        android:letterSpacing="0.05"
+        android:gravity="bottom"
+        android:textColor="@color/colorRed"
+        android:text="U29tZSBzdXBlciBsb25nIG51bWJlcg"/>
+
+</LinearLayout>
