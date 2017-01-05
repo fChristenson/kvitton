@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:minHeight="59dp"
+    android:minHeight="81dp"
     android:background="@color/colorWhite"
     android:padding="@dimen/margin_md">
 
@@ -22,7 +22,7 @@
         android:maxLines="1"
         android:ellipsize="end"
         android:textColor="@color/colorPrimary"
-        android:text="foo"/>
+        android:text="Media Markt"/>
 
     <TextView
         android:id="@+id/date"
@@ -35,6 +35,20 @@
         android:textColor="@color/colorPrimary"
         android:text="2016-12-24"/>
 </LinearLayout>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/font_lg"
+        android:letterSpacing="0.05"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:gravity="bottom"
+        android:textColor="@color/colorRed"
+        android:paddingTop="@dimen/margin_sm"
+        android:paddingBottom="@dimen/margin_sm"
+        android:text="900 SEK"/>
 
     <TextView
         android:id="@+id/code"

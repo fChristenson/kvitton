@@ -1,9 +1,9 @@
 package se.fredrik.kvitton;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,5 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
         String[] strings = {"foo", "bar", "baz", "foo", "bar", "baz", "foo", "bar", "baz", "foo", "bar", "baz", "foo", "bar", "baz"};
         list.setAdapter(new ListAdapter(this, strings));
+
+    }
+
+    public void goToCamera(View view) {
+        startActivity(new Intent(this, CameraActivity.class));
     }
 }

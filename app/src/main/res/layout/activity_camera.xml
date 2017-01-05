@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_camera"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.fredrik.kvitton.CameraActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            style="@style/content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    style="@style/data_container">
+                    <TextView
+                        android:id="@+id/store"
+                        android:letterSpacing="0.05"
+                        style="@style/label"
+                        android:text="Butik"/>
+
+                    <EditText
+                        style="@style/text_field"
+                        android:id="@+id/store_field"
+                        android:text="Media Markt"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/data_container">
+                    <TextView
+                        android:id="@+id/date"
+                        android:letterSpacing="0.05"
+                        style="@style/label"
+                        android:text="Datum"/>
+
+                    <EditText
+                        style="@style/text_field"
+                        android:inputType="date"
+                        android:id="@+id/date_field"
+                        android:text="2016-01-22"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/data_container">
+                    <TextView
+                        android:id="@+id/price"
+                        android:letterSpacing="0.05"
+                        style="@style/label"
+                        android:text="Belopp"/>
+
+                    <EditText
+                        style="@style/text_field"
+                        android:id="@+id/price_field"
+                        android:text="900 SEK"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/data_container">
+                    <TextView
+                        android:id="@+id/code"
+                        android:letterSpacing="0.05"
+                        style="@style/label"
+                        android:text="Kvittonummer"/>
+
+                    <EditText
+                        style="@style/text_field"
+                        android:id="@+id/code_field"
+                        android:text="U29tZSBzdXBlciBsb25nIG51bWJlcg"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:onClick="save"
+                    android:background="@color/colorRed"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="33dp"
+                    android:layout_marginTop="28dp"
+                    android:letterSpacing="0.05"
+                    android:text="SPARA"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_height="@dimen/menu_height">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_border"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    style="@style/button"
+                    android:id="@+id/camera_btn"
+                    android:adjustViewBounds="true"
+                    android:background="@mipmap/camera_icon"
+                    android:scaleType="fitCenter"
+                    android:outlineProvider="none"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    style="@style/button"
+                    android:id="@+id/list_btn"
+                    android:onClick="goToList"
+                    android:background="@mipmap/list_icon"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:outlineProvider="none"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

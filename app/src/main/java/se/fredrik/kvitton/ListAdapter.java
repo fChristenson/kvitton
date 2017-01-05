@@ -23,8 +23,8 @@ public class ListAdapter extends BaseAdapter {
         this.context = context;
         this.strings = strings;
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        this.face = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Medium.ttf");
-        this.boldFace = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Black.ttf");
+        this.face = Typeface.createFromAsset(context.getAssets(), Constants.PRIMARY_FONT);
+        this.boldFace = Typeface.createFromAsset(context.getAssets(), Constants.PRIMARY_FONT_BOLD);
     }
 
     @Override
@@ -48,10 +48,12 @@ public class ListAdapter extends BaseAdapter {
 
         TextView store = (TextView) row.findViewById(R.id.store);
         TextView date = (TextView) row.findViewById(R.id.date);
+        TextView price = (TextView) row.findViewById(R.id.price);
         TextView code = (TextView) row.findViewById(R.id.code);
 
         store.setTypeface(face);
         date.setTypeface(face);
+        price.setTypeface(boldFace);
         code.setTypeface(boldFace);
 
         return row;

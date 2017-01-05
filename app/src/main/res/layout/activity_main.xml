@@ -1,24 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="se.fredrik.kvitton.MainActivity">
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="se.fredrik.kvitton.MainActivity">
 
+    <RelativeLayout
+        style="@style/content">
 
-    <ListView
-        android:id="@+id/list"
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/margin_md"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="@dimen/margin_md"
-        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="@dimen/menu_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                style="@style/button"
+                android:id="@+id/camera_btn"
+                android:onClick="goToCamera"
+                android:adjustViewBounds="true"
+                android:background="@mipmap/camera_icon"
+                android:scaleType="fitCenter"
+                android:outlineProvider="none"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                style="@style/button"
+                android:id="@+id/list_btn"
+                android:background="@mipmap/list_icon"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:outlineProvider="none"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
