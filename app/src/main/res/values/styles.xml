@@ -10,7 +10,7 @@
 
     <style name="button">
         <item name="android:layout_width">@dimen/menu_height</item>
-        <item name="android:layout_height">@dimen/menu_height</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:background">@color/colorWhite</item>
     </style>

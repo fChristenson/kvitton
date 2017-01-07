@@ -112,7 +112,8 @@
                     style="@style/button"
                     android:id="@+id/camera_btn"
                     android:adjustViewBounds="true"
-                    android:background="@mipmap/camera_icon"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/camera_icon_active"
                     android:scaleType="fitCenter"
                     android:outlineProvider="none"/>
 
@@ -127,7 +128,8 @@
                     style="@style/button"
                     android:id="@+id/list_btn"
                     android:onClick="goToList"
-                    android:background="@mipmap/list_icon"
+                    android:src="@drawable/list_icon_inactive"
+                    android:background="@color/colorWhite"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:outlineProvider="none"/>

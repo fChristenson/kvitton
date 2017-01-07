@@ -41,7 +41,8 @@ tools:context="se.fredrik.kvitton.MainActivity">
                 android:id="@+id/camera_btn"
                 android:onClick="goToCamera"
                 android:adjustViewBounds="true"
-                android:background="@mipmap/camera_icon"
+                android:background="@color/colorWhite"
+                android:src="@drawable/camera_icon_inactive"
                 android:scaleType="fitCenter"
                 android:outlineProvider="none"/>
 
@@ -56,7 +57,8 @@ tools:context="se.fredrik.kvitton.MainActivity">
             <ImageButton
                 style="@style/button"
                 android:id="@+id/list_btn"
-                android:background="@mipmap/list_icon"
+                android:src="@drawable/list_icon_active"
+                android:background="@color/colorWhite"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:outlineProvider="none"/>
