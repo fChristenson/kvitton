@@ -53,7 +53,7 @@ public class CameraActivity extends AppCompatActivity {
     }
 
     public void save(View view) {
-        Toast msg = Toast.makeText(this, "Kvitto sparades!", Toast.LENGTH_SHORT);
+        Toast msg = Toast.makeText(this, "Kvitto sparades! =D", Toast.LENGTH_SHORT);
         msg.show();
         goToList(view);
     }
